@@ -196,6 +196,7 @@ ApplicationWindow {
         Button {
             id: fetchInfoButton
             text: qsTr("fetch-info-button-text")
+            selectByMouse: true
             onClicked: {
                 registry.fetchInfo(modelNameOrUrl.text);
             }
